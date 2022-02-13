@@ -14,6 +14,10 @@ Entity Relationship:
 Relational Map:
 ![image](https://user-images.githubusercontent.com/53063791/153776142-ffab683f-ecec-444c-89ef-b26442d1cae8.png)
 
+![image](https://user-images.githubusercontent.com/53063791/153776219-61d95193-1252-4655-b6dc-d9a996453e58.png)
+
+![image](https://user-images.githubusercontent.com/53063791/153776222-745482b1-92df-4132-ba0a-f980f5557830.png)
+
 
 Normal Form Discussion
 All of our relations are in 3NF form. This is due to the fact that our system is strongly reliant on ID numbers, which means that each relation will only have 1 candidate key, which makes all functional dependencies not transitive. The IDs will identify all parts of the relation, and no attributes in any of the relations should be able to identify other non-key attributes. 
