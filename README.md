@@ -14,57 +14,6 @@ Entity Relationship:
 Relational Map:
 ![image](https://user-images.githubusercontent.com/53063791/153776142-ffab683f-ecec-444c-89ef-b26442d1cae8.png)
 
-Queries
-SQL Statement
-Purpose
-EXAMPLE OF CREATE
-CREATE TABLE PRICE
-(
-ID INT NOT NULL,
-pdate INT NOT NULL,
-price INT NOT NULL,
-PRIMARY KEY (ID, pdate)
-);
-Used to Create tables
-EXAMPLE OF INSERT
-INSERT INTO PRICE(ID, pdate, price)
-VALUES(654654123, 3-16-2021, 100000);
-Inserting data into the table to fill with data
-EXAMPLE OF DROP
-Drop TABLE INFO;
- Clears the table INFO if there is a table called INFO.
-EXAMPLE OF OPEN
-.open REALESATE.db
-Opens the database REALESATE.db
-
-
-
-
-Support Functions
-SQL Statement
-Purpose
-SELECT name
-FROM PROPERTY
-WHERE price > 100000;
-Select property over 100,000
-SELECT pname
-FROM PRICE
-WHERE price > 100000;
-Select price over 100,000
-SELECT name
-FROM PROPERTY
-WHERE infoID = (
-SELECT ID
-FROM INFO
-WHERE pool > 0
-);
- Select property with pools
-SELECT ID
-FROM REALTOR
-WHERE companyID = 789789789;
-Select realtor with the same companyID
-
-
 
 Normal Form Discussion
 All of our relations are in 3NF form. This is due to the fact that our system is strongly reliant on ID numbers, which means that each relation will only have 1 candidate key, which makes all functional dependencies not transitive. The IDs will identify all parts of the relation, and no attributes in any of the relations should be able to identify other non-key attributes. 
